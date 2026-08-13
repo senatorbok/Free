@@ -1,0 +1,4 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "postStartCommand": "bash -lc 'if [ -f /home/codespace/watchdog.sh ]; then setsid nohup /home/codespace/watchdog.sh >/dev/null 2>&1 < /dev/null & fi'"
+}
